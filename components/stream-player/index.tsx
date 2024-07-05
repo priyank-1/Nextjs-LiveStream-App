@@ -78,7 +78,7 @@ export const StreamPlayer = ({
         <Header
         hostName = { user.username}
         hostIdentity = {user.id}
-        viewerIdenity = {identity}
+        viewerIdentity = {identity}
         imageUrl ={user.imageUrl}
         isFollowing = {isFollowing}
         name = {stream.name}

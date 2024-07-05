@@ -20,7 +20,7 @@ export const useViewerToken = (hostIdentity : string)=>{
                     
 
                     const name = decodedToken?.name;
-                    const identity = decodedToken?.iss;
+                    const identity = decodedToken?.sub;
                 
                    
 

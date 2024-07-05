@@ -10,7 +10,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 interface HeaderProps{
     hostName :string
     hostIdentity :string
-    viewerIdenity : string
+    viewerIdentity : string
     imageUrl :string
     isFollowing : boolean
     name : string 
@@ -19,7 +19,7 @@ interface HeaderProps{
 export const Header = ({
     hostName,
     hostIdentity,
-    viewerIdenity,
+    viewerIdentity,
     imageUrl,
     isFollowing,
     name
@@ -29,7 +29,7 @@ export const Header = ({
     const isLive = !!participant;
     const participantCount = participants.length - 1;
     const hostAsViewer = `host-${hostIdentity}`;
-    const isHost = viewerIdenity === hostAsViewer;
+    const isHost = viewerIdentity === hostAsViewer;
   return (
     <div className=' flex flex-col lg:flex-row gap-y-4 lg:gap-y-0 items-start justify-between px-4'
     >
