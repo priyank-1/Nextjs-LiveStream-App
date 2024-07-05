@@ -24,11 +24,20 @@ export const getUserByUsername = async (username : string) => {
             },
             _count :{
                 select : {
-                    followedBy : true,
+                followedBy : true,
                 },
             },
         }
     });
+
+    if (user) {
+        return {
+            ...user,
+            _count: {
+                followers: user._count.followedBy
+            }
+        };
+    }
 
     return user;
 }

@@ -30,7 +30,8 @@ type CustomUser = {
   bio : string | null,
   stream : CustomStream | null,
   imageUrl : string,
-  _count : { followers : number }
+  _count : { followers : number },
+  externalUserId  : string | null,
 };
 
 interface StreamPlayerProps {
