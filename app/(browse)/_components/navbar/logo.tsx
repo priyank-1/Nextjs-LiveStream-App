@@ -23,7 +23,7 @@ export const Logo = () => {
             "hidden lg:block"
             ,font.className)}>
           <p className="text-lg font-semibold">GStream</p>
-          <p className=" text-xs text-muted-foreground">Let's Play</p>
+          <p className=" text-xs text-muted-foreground">Let&apos;s Play</p>
         </div>
       </div>
     </Link>
