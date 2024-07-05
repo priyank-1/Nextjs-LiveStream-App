@@ -70,6 +70,6 @@ export const getRecommended =  async () =>{
     }
 
     
-
+    console.log(users);
     return users
 }
